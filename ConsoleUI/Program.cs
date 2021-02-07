@@ -14,10 +14,10 @@ namespace ConsoleUI
             //DTO ==> Data Transformation Object
             //ProductTest();
             //IoC
-            //CAtegoryTest();
+            CategoryTest();
         }
 
-        private static void CAtegoryTest()
+        private static void CategoryTest()
         {
             CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
             foreach (var category in categoryManager.GetAll())
