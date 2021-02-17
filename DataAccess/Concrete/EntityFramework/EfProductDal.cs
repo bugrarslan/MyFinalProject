@@ -12,11 +12,11 @@ using System.Text;
 namespace DataAccess.Concrete.EntityFramework
 {
     //NuGet
-    public class EfProductDal : EfEntityRepositorybase<Product, NortwindContext>, IProductDal
+    public class EfProductDal : EfEntityRepositorybase<Product, NorthwindContext>, IProductDal
     {
         public List<ProductDetailDto> GetProductDetails()
         {
-            using (NortwindContext context = new NortwindContext())
+            using (NorthwindContext context = new NorthwindContext())
             {
                 var result = from p in context.Products
                              join c in context.Categories
