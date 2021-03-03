@@ -12,7 +12,7 @@ using System.Text;
 namespace DataAccess.Concrete.EntityFramework
 {
     //NuGet
-    public class EfProductDal : EfEntityRepositorybase<Product, NorthwindContext>, IProductDal
+    public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
     {
         public List<ProductDetailDto> GetProductDetails()
         {
